@@ -7,10 +7,10 @@
 
 import re
 
-texto = "La respuesta es True, pero a veces es False."
+texto = "Es True que vivo en Colombia, es False que nací en otro país."
 
 # Expresión regular para booleanos (True o False, case-insensitive)
-patron = r"\\b(True|False)\\b"
+patron = r"\b(True|False)\b"
 
 # Buscar todos los booleanos
 booleans = re.findall(patron, texto, re.IGNORECASE)
